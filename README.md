@@ -107,7 +107,9 @@ No CMake or configuration required. Just drop the three .h files into your proje
         }
         cout << endl;
 
-        // 3. Use unique pointer for automatic memory management,(value)
+        // 3. Use unique pointer for automatic memory management. value in ()
+        //// 3. Use unique pointer for automatic memory management. 
+// Just pass the value directly. No 'new' needed.
         my_unique_ptr ptr(999);
         *ptr = 1000; // Modify value using overloaded operator*
         cout << "Smart Pointer Value: " << *ptr << endl;
