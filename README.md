@@ -65,7 +65,7 @@ Because I find the standard STL too heavy and the templates too complex, I decid
         }
         cout << endl;
 
-        // 3. 使用独占智能指针管理内存，无需手动 delete
+        // 3. 使用独占智能指针管理内存且直接把要指向的值输入括号即可，无需手动 delete和new
         my_unique_ptr ptr(999);
         *ptr = 1000; // 使用重载的 * 直接修改值
         cout << "Smart Pointer Value: " << *ptr << endl;
@@ -107,7 +107,7 @@ No CMake or configuration required. Just drop the three .h files into your proje
         }
         cout << endl;
 
-        // 3. Use unique pointer for automatic memory management
+        // 3. Use unique pointer for automatic memory management,(value)
         my_unique_ptr ptr(999);
         *ptr = 1000; // Modify value using overloaded operator*
         cout << "Smart Pointer Value: " << *ptr << endl;
