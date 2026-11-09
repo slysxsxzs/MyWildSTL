@@ -9,6 +9,8 @@ private:
     int m_capacity = 0;
 
 public:
+my_vector(const my_vector&) = delete;
+my_vector& operator=(const my_vector&) = delete;
     void init(int a, int b) {
         if(a > m_capacity)
         {
